@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Deutlern</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="lernen">Lernen</string>
+    <string name="entwicklung">Entwicklung</string>
+    <string name="chat">Chat</string>
+    <string name="title_activity_questions">QuestionsActivity</string>
+</resources>

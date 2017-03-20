@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.renanlima.deutlern.MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:columnCount="1"
+        android:rowCount="3">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="2"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sind Sie bereit?"
+            android:gravity="center_horizontal"
+            android:textSize="24dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/primary_text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Wählen Sie ein Niveau und fangen Sie an zu lernen"
+            android:textSize="14dp"
+
+            android:layout_gravity="top"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/primary_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="2">
+            <Button
+                android:id="@+id/button_anfaenger"
+                android:background="@drawable/button_selector"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:text="Anfänger"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="14dp"
+                android:textColor="@color/icons"
+                android:onClick="callAnfaenger"/>
+            <Button
+                android:id="@+id/button_fortgeschrittener"
+                android:background="@drawable/button_selector"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+
+                android:text="Fortgeschrittener"
+                android:layout_marginBottom="14dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/icons"/>
+            <Button
+                android:id="@+id/button_experte"
+                android:background="@drawable/button_selector"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+
+                android:text="Experte"
+                android:layout_marginBottom="14dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:itemIconTint="@color/icons"
+            app:itemTextColor="@color/icons"
+            android:layout_gravity="bottom"
+            app:menu="@menu/navigation" />
+        </LinearLayout>
+    </GridLayout>
+</FrameLayout>
