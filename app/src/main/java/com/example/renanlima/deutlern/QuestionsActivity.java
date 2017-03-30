@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,12 @@ public class QuestionsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        GridLayout gridLayout = (GridLayout)findViewById(R.id.gridLayout_questions);
+        Bundle extra = getIntent().getExtras();
+        String niveau = extra.getString("niveau");
+        TextView txtNiveau = (TextView)findViewById(R.id.txtv_niveau);
+        txtNiveau.setText(niveau);
+        txtNiveau.setAlpha(0.54f);
+        /*GridLayout gridLayout = (GridLayout)findViewById(R.id.gridLayout_questions);
         gridLayout.setColumnCount(COLUMNCOUNT);
         gridLayout.setRowCount(ROWCOUNT);
 
@@ -37,7 +43,7 @@ public class QuestionsActivity extends AppCompatActivity {
                 mButton.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
                 gridLayout.addView(mButton);
             }
-        }
+        }*/
 
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);

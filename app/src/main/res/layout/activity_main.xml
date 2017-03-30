@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.example.renanlima.deutlern.MainActivity">
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:columnCount="1"
         android:rowCount="3">
         <LinearLayout
@@ -17,28 +20,29 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
             android:layout_rowWeight="2"
             >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sind Sie bereit?"
+            android:text="DEUTLERN"
             android:gravity="center_horizontal"
-            android:textSize="24dp"
+            android:textSize="60dp"
             android:textStyle="bold"
 
-            android:textColor="@color/primary_text"/>
+            android:textColor="@color/icons"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="Wählen Sie ein Niveau und fangen Sie an zu lernen"
-            android:textSize="14dp"
-
+            android:text="Escolha um nível e comece a praticar"
+            android:textSize="16dp"
             android:layout_gravity="top"
             android:fontFamily="sans-serif-thin"
-            android:textColor="@color/primary_text"/>
+            android:textColor="@color/icons"/>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
@@ -60,26 +64,34 @@
                 android:background="@drawable/button_selector"
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
-
                 android:text="Fortgeschrittener"
                 android:layout_marginBottom="14dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/icons"/>
+                android:textColor="@color/icons"
+                android:onClick="callFortgeschrittener"/>
             <Button
                 android:id="@+id/button_experte"
                 android:background="@drawable/button_selector"
                 android:layout_width="244dp"
                 android:layout_height="wrap_content"
-
                 android:text="Experte"
                 android:layout_marginBottom="14dp"
                 android:layout_gravity="center_horizontal"
-                android:textColor="@color/icons"/>
+                android:textColor="@color/icons"
+                android:onClick="callExperte"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nunca"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@color/icons"
+                android:layout_gravity="left"
+                android:textSize="22dp"/>
         </LinearLayout>
         <LinearLayout android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <android.support.design.widget.BottomNavigationView
+        <!--android.support.design.widget.BottomNavigationView
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -87,7 +99,7 @@
             app:itemIconTint="@color/icons"
             app:itemTextColor="@color/icons"
             android:layout_gravity="bottom"
-            app:menu="@menu/navigation" />
+            app:menu="@menu/navigation" /-->
         </LinearLayout>
     </GridLayout>
-</FrameLayout>
+</LinearLayout>

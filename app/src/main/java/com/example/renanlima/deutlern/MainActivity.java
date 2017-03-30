@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mActiobar = getSupportActionBar();
+        /*mActiobar = getSupportActionBar();
         mActiobar.setDisplayShowCustomEnabled(true);
         mActiobar.setDisplayHomeAsUpEnabled(true);
         mActiobar.setHomeAsUpIndicator(R.drawable.ic_book_black_24dp);
@@ -63,15 +63,31 @@ public class MainActivity extends AppCompatActivity {
                 ,ViewGroup.LayoutParams.MATCH_PARENT
                 , Gravity.CENTER);
 
-        TextView textView = (TextView)findViewById(R.id.textView_title);
+        TextView textView = (TextView)findViewById(R.id.textView_title);*/
 
         mButtonAnfanger = (Button) findViewById(R.id.button_anfaenger);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        /*BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);*/
     }
 
     public void callAnfaenger(View view) {
+        String niveau = "Anfänger";
         Intent intent = new Intent(this,QuestionsActivity.class);
+        intent.putExtra("niveau",niveau);
+        startActivity(intent);
+    }
+
+    public void callFortgeschrittener(View view) {
+        String niveau = "Fortgeschrittener";
+        Intent intent = new Intent(this,QuestionsActivity.class);
+        intent.putExtra("niveau",niveau);
+        startActivity(intent);
+    }
+
+    public void callExperte(View view) {
+        String niveau = "Experte";
+        Intent intent = new Intent(this,QuestionsActivity.class);
+        intent.putExtra("niveau",niveau);
         startActivity(intent);
     }
 }
