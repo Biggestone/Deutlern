@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.renanlima.deutlern.QuestionsActivity">
+    tools:context="com.example.renanlima.deutlern.SelectionActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/stoolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            android:subtitleTextAppearance="@style/ToolbarSubtitleAppearance"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+        <!--include layout="@layout/my_actionbar_layout"
+            android:id="@+id/stoolbar"/-->
+
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_questions" />
+    <include layout="@layout/content_selection" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

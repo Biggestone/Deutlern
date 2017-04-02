@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/primary_light">
+            >
             <TextView
                 android:id="@+id/txtv_niveau"
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:textSize="16dp"
                 android:layout_gravity="center_horizontal"
                 android:textStyle="bold"
-                android:textColor="@color/primary_text"
+                android:textColor="@color/colorAccentDark"
                 />
         </LinearLayout>
         <GridLayout
@@ -53,7 +53,7 @@
                 android:layout_margin="10dp"
                 android:text="1"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -63,7 +63,7 @@
                 android:layout_margin="10dp"
                 android:text="2"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -73,7 +73,7 @@
                 android:layout_margin="10dp"
                 android:text="3"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -83,7 +83,7 @@
                 android:layout_margin="10dp"
                 android:text="4"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -93,7 +93,7 @@
                 android:layout_margin="10dp"
                 android:text="5"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -103,7 +103,7 @@
                 android:layout_margin="10dp"
                 android:text="6"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -113,7 +113,7 @@
                 android:layout_margin="10dp"
                 android:text="7"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -123,7 +123,7 @@
                 android:layout_margin="10dp"
                 android:text="8"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
             <Button
                 android:id="@+id/button_question_nine"
@@ -132,7 +132,7 @@
                 android:layout_margin="10dp"
                 android:text="9"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -142,7 +142,7 @@
                 android:layout_margin="10dp"
                 android:text="10"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -152,7 +152,7 @@
                 android:layout_margin="10dp"
                 android:text="11"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -162,7 +162,7 @@
                 android:layout_margin="10dp"
                 android:text="12"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
             <Button
                 android:id="@+id/button_question_thirteen"
@@ -171,7 +171,7 @@
                 android:layout_margin="10dp"
                 android:text="13"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -181,7 +181,7 @@
                 android:layout_margin="10dp"
                 android:text="14"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -191,7 +191,7 @@
                 android:layout_margin="10dp"
                 android:text="15"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -201,7 +201,7 @@
                 android:layout_margin="10dp"
                 android:text="16"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
             <Button
                 android:id="@+id/button_question_seventeen"
@@ -210,7 +210,7 @@
                 android:layout_margin="10dp"
                 android:text="17"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -220,7 +220,7 @@
                 android:layout_margin="10dp"
                 android:text="18"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -230,7 +230,7 @@
                 android:layout_margin="10dp"
                 android:text="19"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
             <Button
@@ -240,7 +240,7 @@
                 android:layout_margin="10dp"
                 android:text="20"
                 android:gravity="center"
-                android:textColor="@color/icons"
+                android:textColor="@color/colorPrimary"
                 android:background="@drawable/button_question_shape" />
 
         </GridLayout>

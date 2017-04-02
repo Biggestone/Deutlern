@@ -65,14 +65,15 @@ public class MainActivity extends AppCompatActivity {
 
         TextView textView = (TextView)findViewById(R.id.textView_title);*/
 
-        mButtonAnfanger = (Button) findViewById(R.id.button_anfaenger);
+        /*mButtonAnfanger = (Button) findViewById(R.id.button_anfaenger);*/
         /*BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);*/
     }
 
     public void callAnfaenger(View view) {
+
+        Intent intent = new Intent(this,SelectionActivity.class);
         String niveau = "Anfänger";
-        Intent intent = new Intent(this,QuestionsActivity.class);
         intent.putExtra("niveau",niveau);
         startActivity(intent);
     }

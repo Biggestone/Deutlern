@@ -2,8 +2,11 @@
 <resources>
     <color name="colorPrimary">#FF9800</color>
     <color name="colorPrimaryDark">#EF6C00</color>
+    <color name="colorGradientEnd">#E65100</color>
     <color name="primary_light">#FFCC80</color>
+    <color name="colorPrimary_lighter">#FFF3E0</color>
     <color name="colorAccent">#40C4FF</color>
+    <color name="colorAccentDark">#00B0FF</color>
     <color name="primary_text">#000000</color>
     <color name="secondary_text">#757575</color>
     <color name="icons">#FFFFFF</color>

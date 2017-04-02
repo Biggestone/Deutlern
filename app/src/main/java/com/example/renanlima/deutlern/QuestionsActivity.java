@@ -31,7 +31,7 @@ public class QuestionsActivity extends AppCompatActivity {
         String niveau = extra.getString("niveau");
         TextView txtNiveau = (TextView)findViewById(R.id.txtv_niveau);
         txtNiveau.setText(niveau);
-        txtNiveau.setAlpha(0.54f);
+        getSupportActionBar().setSubtitle("Wählen Sie ein Niveau");
         /*GridLayout gridLayout = (GridLayout)findViewById(R.id.gridLayout_questions);
         gridLayout.setColumnCount(COLUMNCOUNT);
         gridLayout.setRowCount(ROWCOUNT);
