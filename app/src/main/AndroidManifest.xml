@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".QuestionsActivity"
+            android:name=".NumbersActivity"
             android:label="@string/title_activity_questions"
             android:parentActivityName=".SelectionActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -35,6 +35,15 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.renanlima.deutlern.MainActivity" />
+        </activity>
+        <activity
+            android:name=".QuestionsActivity"
+            android:label="@string/title_activity_questions"
+            android:parentActivityName=".NumbersActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.renanlima.deutlern.NumbersActivity" />
         </activity>
     </application>
 

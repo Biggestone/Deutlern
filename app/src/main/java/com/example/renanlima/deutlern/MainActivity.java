@@ -1,18 +1,13 @@
 package com.example.renanlima.deutlern;
 
 import android.content.Intent;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -80,14 +75,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void callFortgeschrittener(View view) {
         String niveau = "Fortgeschrittener";
-        Intent intent = new Intent(this,QuestionsActivity.class);
+        Intent intent = new Intent(this,NumbersActivity.class);
         intent.putExtra("niveau",niveau);
         startActivity(intent);
     }
 
     public void callExperte(View view) {
         String niveau = "Experte";
-        Intent intent = new Intent(this,QuestionsActivity.class);
+        Intent intent = new Intent(this,NumbersActivity.class);
         intent.putExtra("niveau",niveau);
         startActivity(intent);
     }

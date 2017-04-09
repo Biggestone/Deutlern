@@ -42,7 +42,7 @@ public class SelectionActivity extends AppCompatActivity {
     View.OnClickListener onClickListenerAnfaenger = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(),QuestionsActivity.class);
+            Intent intent = new Intent(getApplicationContext(),NumbersActivity.class);
             String niveau = "Anfänger";
             intent.putExtra("niveau",niveau);
             startActivity(intent);
@@ -51,7 +51,7 @@ public class SelectionActivity extends AppCompatActivity {
     View.OnClickListener onClickListenerFortgescrittener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(),QuestionsActivity.class);
+            Intent intent = new Intent(getApplicationContext(),NumbersActivity.class);
             String niveau = "Forgescrittener";
             intent.putExtra("niveau",niveau);
             startActivity(intent);
@@ -60,7 +60,7 @@ public class SelectionActivity extends AppCompatActivity {
     View.OnClickListener onClickListenerExperte = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(getApplicationContext(),QuestionsActivity.class);
+            Intent intent = new Intent(getApplicationContext(),NumbersActivity.class);
             String niveau = "Experte";
             intent.putExtra("niveau",niveau);
             startActivity(intent);

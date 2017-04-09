@@ -16,22 +16,17 @@
         <FrameLayout
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:background="@color/icons"
+            android:background="@color/colorPrimary"
             android:layout_rowWeight="1">
+
             <ImageView
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                app:srcCompat="@drawable/ic_deutlernicon"
+                app:srcCompat="@drawable/logo_deutlern"
                 android:scaleType="centerCrop"
                 android:adjustViewBounds="true"
-                android:layout_gravity="top"/>
-            <ImageView
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                app:srcCompat="@drawable/ic_berlin"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
-                android:layout_gravity="bottom"/>
+                android:layout_gravity="center"/>
+
         </FrameLayout>
 
 
@@ -78,8 +73,88 @@
             android:columnCount="3"
             android:rowCount="1"
             android:layout_rowWeight="2"
-            android:background="@drawable/gradient_shape">
-            <Button
+            android:background="@color/white_background">
+
+            <android.support.v7.widget.CardView
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1"
+                android:onClick="callAnfaenger">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flat_icon_book" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lernen"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flat_icon_chart" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entwicklung"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_columnWeight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flat_icon_roboto" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chat"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!--Button
                 android:layout_height="70dp"
                 android:layout_width="70dp"
                 android:tint="@color/icons"
@@ -121,7 +196,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_columnWeight="1"
                 android:elevation="4dp"
-                />
+                /-->
 
             <!--LinearLayout
                 android:orientation="vertical"
