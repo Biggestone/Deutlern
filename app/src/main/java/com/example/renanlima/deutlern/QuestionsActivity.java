@@ -23,6 +23,7 @@ public class QuestionsActivity extends AppCompatActivity {
         SwipeAdapter swipeAdapter = new SwipeAdapter(getSupportFragmentManager());
         viewPager.setAdapter(swipeAdapter);
 
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setVisibility(View.INVISIBLE);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -34,5 +35,4 @@ public class QuestionsActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
 }
